@@ -2,15 +2,23 @@ import { NavLink } from 'react-router-dom';
 
 const sidebarItems = [
   { name: 'Dashboard', path: '/dashboard' },
-  { name: 'Users', path: '/users' },
+  { name: 'Users', path: '/users', adminOnly: true }, // 👈 added flag
   { name: 'Customers', path: '/customers' },
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ userRole }: { userRole: string }) => {
+  // Filter items based on role
+  const visibleItems = sidebarItems.filter((item) => {
+    if (item.adminOnly && userRole === 'member') {
+      return false; // hide Users for member
+    }
+    return true;
+  });
+
   return (
     <aside className="w-64 bg-white text-black dark:bg-black dark:text-white border-r border-gray-200 dark:border-gray-700 transition-colors duration-300">
       <nav className="mt-5 px-2">
-        {sidebarItems.map((item) => (
+        {visibleItems.map((item) => (
           <NavLink
             key={item.path}
             to={item.path}

@@ -4,7 +4,6 @@ export const apiEndpoints = {
   auth: {
     login: `${API_BASE_URL}/api/token/`,
     refresh: `${API_BASE_URL}/api/token/refresh/`,
-
     logout: `${API_BASE_URL}/logout/`,
   },
   users: {
