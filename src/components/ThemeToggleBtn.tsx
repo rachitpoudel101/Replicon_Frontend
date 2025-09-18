@@ -27,7 +27,7 @@ const ThemeToggleBtn: React.FC = () => {
       >
         Dark
       </button>
-      <button
+      {/* <button
         className={`px-2 py-1 rounded transition-colors duration-200 ${
           theme === "system"
             ? "bg-blue-500 text-white"
@@ -37,7 +37,7 @@ const ThemeToggleBtn: React.FC = () => {
         aria-label="System theme"
       >
         System
-      </button>
+      </button> */}
     </div>
   );
 };
