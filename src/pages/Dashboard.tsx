@@ -17,7 +17,7 @@ const Dashboard: React.FC = () => {
     <div className="flex flex-col min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
       <Navbar />
       <div className="flex flex-1">
-        <Sidebar userRole="member" />   
+        <Sidebar  />   
         <main className="flex-1 flex items-center justify-center bg-white text-black dark:bg-black dark:text-white border-r border-gray-200 dark:border-gray-700 transition-colors duration-300">
           <div className="bg-gray-100 dark:bg-zinc-900 shadow rounded-lg p-8 transition-colors duration-300">
             <h2 className="text-2xl font-bold mb-2">Welcome{user?.username ? `, ${user.username}` : ''}!</h2>
