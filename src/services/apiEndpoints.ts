@@ -14,4 +14,18 @@ export const apiEndpoints = {
     update: (id: string | number) => `${API_BASE_URL}/users/${id}/`,
     delete: (id: string | number) => `${API_BASE_URL}/users/${id}/`,
   },
+  // workoutPlan: {
+  //   list: `${API_BASE_URL}/workout-plans/`,
+  //   detail: (id: string | number) => `${API_BASE_URL}/workout-plans/${id}/`,
+  //   create: `${API_BASE_URL}/workout-plans/`,
+  //   update: (id: string | number) => `${API_BASE_URL}/workout-plans/${id}/`,
+  //   delete: (id: string | number) => `${API_BASE_URL}/workout-plans/${id}/`,
+  // },
+  // trainermember: {
+  //   list: `${API_BASE_URL}/trainer-members/`,
+  //   detail: (id: string | number) => `${API_BASE_URL}/trainer-members/${id}/`,
+  //   create: `${API_BASE_URL}/trainer-members/`,
+  //   update: (id: string | number) => `${API_BASE_URL}/trainer-members/${id}/`,
+  //   delete: (id: string | number) => `${API_BASE_URL}/trainer-members/${id}/`,
+  // },
 };

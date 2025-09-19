@@ -1,6 +1,8 @@
 import Login from "./pages/Login";
 import Dashboard from "@/pages/Dashboard";
+// import AssignTrainerMemberPage from "@/pages/AssignTrainerMember"
 import Users from "@/pages/Users";
+// import Workout from "@/pages/Workout";
 import ProtectedRoute from "./routes/ProtectedRoute";
 import PublicRoute from "./routes/PublicRoute";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
@@ -21,6 +23,8 @@ function App() {
             {/* Protected Routes */}
             <Route element={<ProtectedRoute />}>
               <Route path="/dashboard" element={<Dashboard />} />
+              {/* <Route path="/workout" element={<Workout />} />
+              <Route path="/assign" element={<AssignTrainerMemberPage />} /> */}
               <Route path="/users" element={<Users />} />
             </Route>
             {/* Catch-all route */}

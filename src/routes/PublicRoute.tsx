@@ -7,7 +7,7 @@ const PublicRoute = () => {
 
   // If user is authenticated, redirect to dashboard
   // Otherwise, render the child route (login page)
-  return isAuthenticated ? <Navigate to="/dashbaord" replace /> : <Outlet />;
+  return isAuthenticated ? <Navigate to="/dashboard" replace /> : <Outlet />;
 };
 
 export default PublicRoute;
