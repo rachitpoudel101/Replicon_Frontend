@@ -3,8 +3,9 @@ import { useAuthStore } from "@/stores/authStore";
 
 const sidebarItems = [
 	{ name: 'Dashboard', path: '/dashboard' },
+	{ name: 'Workout', path: '/workout' },
+	{name: "Assign", path: "/assign"},
 	{ name: 'Users', path: '/users', adminOnly: true }, // 👈 added flag
-	{ name: 'Customers', path: '/customers' },
 ];
 
 const Sidebar = () => {
